@@ -1,0 +1,41 @@
+.hero{
+    background: url(../../img/about.png) no-repeat;
+    background-size: cover;
+    font-family: 'Fraunces', serif;
+    // width: 1280px;
+    height: 450px;
+    &_title{
+        padding-top: 100px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+    }
+    &_description{
+        padding-top: 20px;
+        width: 405px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero{
+        width: 450px;
+        background: url(../../img/about_respon.png) no-repeat;
+        background-size: cover;
+        &_title{
+            text-align: center;
+        }
+
+        &_description{
+            text-align: center;
+            font-size: 24px;
+            line-height: 35px;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}

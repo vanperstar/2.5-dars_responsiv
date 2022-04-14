@@ -1,0 +1,131 @@
+.states{
+    margin-bottom: 150px;
+    &_title{
+        margin-bottom: 100px;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+    }
+
+    &_location{
+        display: flex;
+        &_kingdom{
+            margin-right: 170px;
+            &::before{
+                content: "";
+                display: inline-block;
+                background: url(../../img/kingdom.svg) no-repeat;
+                background-size: cover;
+                margin-bottom: 40px;
+                width: 35px;
+                height: 49px;
+            }
+            &_title{
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 36px;
+                color: #333D4B;
+            }
+            &_nav{
+                list-style: none;
+                &_item{
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333D4B;
+                }
+            }
+        }
+
+        &_canada{
+            margin-right: 170px;
+            &::before{
+                content: "";
+                display: inline-block;
+                background: url(../../img/canada.svg) no-repeat;
+                background-size: cover;
+                margin-bottom: 40px;
+                width: 51px;
+                height: 49px;
+            }
+            &_title{
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 36px;
+                color: #333D4B;
+            }
+
+            &_nav{
+                list-style: none;
+
+                &_item{
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333D4B;
+                }
+            }
+                
+        }
+
+        &_australia{
+            margin-right: 170px;
+            &::before{
+                content: "";
+                display: inline-block;
+                background: url(../../img/avstraliya.svg) no-repeat;
+                background-size: cover;
+                margin-bottom: 40px;
+                width: 49px;
+                height: 37px;
+            }
+            &_title{
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 36px;
+                color: #333D4B;
+            }
+            &_nav{
+                list-style: none;
+
+                &_item{
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333D4B;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .states{
+        text-align: center;
+        margin-left: auto;
+        &_location{
+            flex-direction: column;
+
+            &_kingdom{
+                margin-bottom: 50px;
+                margin-right: auto;
+                margin-left: 80px;
+            }
+            &_canada{
+                margin-bottom: 50px;
+                margin-right: auto;
+                margin-left: 150px;
+            }
+            &_australia{
+                margin-right: auto;
+                margin-left: 150px;
+            }
+        }
+    }
+}
